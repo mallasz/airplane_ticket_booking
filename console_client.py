@@ -166,7 +166,7 @@ def create_flight():
     distance = input_float("What is the flight distance? Enter length in kilometres:",
                            lambda x: x > 0, "Flight must be longer than that!")
     price = input_float("Please enter ticket price. If you enter 0, the price will be calculated from flight distance.",
-                        lambda x: x >= 0, "Price must be a nonnegative number")
+                        lambda x: x >= 0, "Price must be a non-negative number")
     if price == 0.0:
         price = None
 
